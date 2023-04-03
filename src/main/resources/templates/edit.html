@@ -5,7 +5,7 @@
   <title>Изменение</title>
 </head>
 <body>
-<form th:method="POST" th:action="@{${user.userId}}" th:object="${user}">
+<form th:method="PATCH" th:action="@{${user.userId}}" th:object="${user}">
   <label for="name">name</label>
   <input type="text" th:field="*{name}" id="name" >
   <br/>
