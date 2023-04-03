@@ -16,7 +16,7 @@ public class UserServImpl implements UserServ{
     }
     @Override
     public List<User> getAllUsers() {
-        return (List<User>) userDao.findAll();
+        return  userDao.findAll();
     }
 
     @Override
