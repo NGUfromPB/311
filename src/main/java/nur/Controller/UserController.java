@@ -53,7 +53,7 @@ public class UserController {
         return "edit";
     }
 
-    @PostMapping("/edit/{id}")
+    @PatchMapping("/edit/{id}")
     public String update(@Valid User user,@PathVariable("id") long id) {
         user.setUserId(id);
         userServ.addUser(user);
